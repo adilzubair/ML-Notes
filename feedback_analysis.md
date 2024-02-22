@@ -47,14 +47,14 @@ The boxplot for branch-wise ratings illustrates the feedback across different ac
 
 The application of K-means clustering aimed to segment the participants based on their satisfaction across the different feedback categories. The Elbow Method plot was used to determine the optimal number of clusters, suggesting a slight bend at k=3, although the curve is smooth, indicating that the data may not be distinctly separable into clear clusters.
 
-![Elbow Method Plot](figures/fig8.png)  
+![Elbow Method Plot](figures/fig9.png)  
 *Image 8: Elbow Method Plot*
 
 ### Cluster Visualization
 
 The scatter plot with centroids marked in red highlights the formation of clusters based on effectiveness and expertise ratings. The plot indicates some degree of separation, albeit with some overlap, reflecting variations in perceptions of the sessions' effectiveness and resource persons' expertise.
 
-![Cluster Visualization](figures/fig9.png)  
+![Cluster Visualization](figures/fig10.png)  
 *Image 9: Cluster Visualization*
 
 ## Observations and Recommendations
