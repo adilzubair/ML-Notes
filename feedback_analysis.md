@@ -35,6 +35,8 @@ The feedback dataset contains responses from participants, including ratings and
 
 The distribution of feedback entries across faculty members indicates that Mrs. Akshara Sasidharan and Mrs. Veena A Kumar received the majority of feedback, suggesting their sessions were more attended or rated by participants.
 
+Subsequent boxplots provide a visual summary of the ratings for content quality, effectiveness, expertise, relevance, and overall organization, segmented by the resource person. The plots reveal generally high median scores across all categories, indicating positive reception. Outliers are noted in effectiveness and expertise, suggesting a few instances of divergent opinions.
+
 ### Ratings by Faculty
 
 ![Content Quality Ratings by Faculty](figures/fig2.png)  
