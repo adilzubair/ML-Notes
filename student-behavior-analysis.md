@@ -65,21 +65,17 @@ Regular viewing of announcements correlates positively with higher class perform
 
 ## Relationships Between Demographic Factors and Engagement Metrics
 
-### Raised Hands by Gender
+![Raised Hands by Gender](figures2/img3.jpg)
 
-![Raised Hands by Gender](figures/img1.jpg)
+### Raised Hands by Gender
 
 The engagement through raised hands varies by gender, suggesting differences in participation habits.
 
 ### Visited Resources by Gender
 
-![Visited Resources by Gender](path/to/img2.jpg)
-
 One gender may be more inclined to use educational resources than the other.
 
 ### Announcements View by Gender
-
-![Announcements View by Gender](path/to/img3.jpg)
 
 The median viewing of announcements shows differentiation between genders.
 
