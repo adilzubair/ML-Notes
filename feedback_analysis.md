@@ -1,76 +1,91 @@
 # Machine Learning Report on Feedback Data Analysis
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Problem Statement](#problem-statement)
+3. [Data Overview](#data-overview)
+4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+    - [Faculty-Wise Distribution of Data](#faculty-wise-distribution-of-data)
+    - [Ratings by Faculty](#ratings-by-faculty)
+    - [Ratings by Branch](#ratings-by-branch)
+5. [K-Means Clustering Analysis](#k-means-clustering-analysis)
+    - [Elbow Method](#elbow-method)
+    - [Cluster Visualization](#cluster-visualization)
+6. [Observations and Recommendations](#observations-and-recommendations)
+7. [Conclusion](#conclusion)
+
 ## Introduction
 
-This report presents a comprehensive analysis of feedback data, exploring the distribution of data across faculty members, the perceived quality of content, effectiveness, expertise, relevance, and the overall organization of sessions. The analysis utilizes a variety of visualization techniques and machine learning clustering to extract insights.
+This report aims to analyze the segmentation of participants in Intel Certification courses based on their satisfaction levels. The analysis utilizes both exploratory data analysis (EDA) techniques and machine learning clustering methods to provide insights into participant perceptions and to tailor course content and delivery effectively.
+
+## Problem Statement
+
+The objective of this study is to understand how participants perceive Intel Certification courses across various metrics such as content quality, effectiveness, expertise, relevance, and overall organization. By segmenting participants based on their satisfaction levels, the report seeks to identify distinct groups with differing perceptions, enabling customized improvements to meet the diverse needs of the participants.
 
 ## Data Overview
 
-The feedback dataset comprises responses from participants who rated various aspects of the sessions they attended. The analyzed aspects include content quality, effectiveness, expertise, relevance, and overall organization. The data was preprocessed to remove irrelevant fields, such as timestamps and email IDs, focusing on the ratings and textual feedback.
+The feedback dataset contains responses from participants, including ratings and textual feedback, on different aspects of the sessions they attended. Irrelevant fields such as timestamps and email IDs were removed during preprocessing to focus on relevant feedback.
 
-## Visualization and Descriptive Statistics
+## Exploratory Data Analysis (EDA)
 
 ### Faculty-Wise Distribution of Data
 
-The visual analysis begins with a breakdown of the number of feedback entries per faculty member. The bar chart and pie chart show that Mrs. Akshara Sasidharan and Mrs. Veena A Kumar received the majority of feedback, accounting for over 65% of the data. This distribution provides an initial understanding of which faculty members' sessions were most attended or rated by the participants.
-
-![Faculty-Wise Distribution of Feedback](image1.png)  
+![Faculty-Wise Distribution of Feedback](figures/fig1.png)  
 *Image 1: Faculty-Wise Distribution of Feedback*
 
-### Ratings by Faculty
+The distribution of feedback entries across faculty members indicates that Mrs. Akshara Sasidharan and Mrs. Veena A Kumar received the majority of feedback, suggesting their sessions were more attended or rated by participants.
 
 Subsequent boxplots provide a visual summary of the ratings for content quality, effectiveness, expertise, relevance, and overall organization, segmented by the resource person. The plots reveal generally high median scores across all categories, indicating positive reception. Outliers are noted in effectiveness and expertise, suggesting a few instances of divergent opinions.
 
-![Content Quality Ratings by Faculty](image2.png)  
+### Ratings by Faculty
+
+![Content Quality Ratings by Faculty](figures/fig2.png)  
 *Image 2: Content Quality Ratings by Faculty*
 
-![Effectiveness Ratings by Faculty](image3.png)  
+![Effectiveness Ratings by Faculty](figures/fig3.png)  
 *Image 3: Effectiveness Ratings by Faculty*
 
-![Expertise Ratings by Faculty](image4.png)  
+![Expertise Ratings by Faculty](figures/fig4.png)  
 *Image 4: Expertise Ratings by Faculty*
 
-![Relevance Ratings by Faculty](image5.png)  
+![Relevance Ratings by Faculty](figures/fig5.png)  
 *Image 5: Relevance Ratings by Faculty*
 
-![Overall Organization Ratings by Faculty](image6.png)  
+![Overall Organization Ratings by Faculty](figures/fig6.png)  
 *Image 6: Overall Organization Ratings by Faculty*
+
+Boxplots displaying ratings across different aspects segmented by faculty members show generally high median scores, indicating positive reception. However, outliers suggest instances of divergent opinions, particularly in effectiveness and expertise.
 
 ### Ratings by Branch
 
-The boxplot for branch-wise ratings illustrates the feedback across different academic departments. All branches show tight interquartile ranges in content quality ratings, with a few outliers, suggesting consistent perceptions of content quality regardless of the branch.
-
-![Branch-Wise Ratings](image7.png)  
+![Branch-Wise Ratings](figures/fig7.png)  
 *Image 7: Branch-Wise Ratings*
+
+Branch-wise boxplots reveal consistent perceptions of content quality across different academic departments, with a few outliers suggesting variations in satisfaction levels.
 
 ## K-Means Clustering Analysis
 
-The application of K-means clustering aimed to segment the participants based on their satisfaction across the different feedback categories. The Elbow Method plot was used to determine the optimal number of clusters, suggesting a slight bend at k=3, although the curve is smooth, indicating that the data may not be distinctly separable into clear clusters.
+### Elbow Method
 
-![Elbow Method Plot](image8.png)  
+![Elbow Method Plot](figures/fig9.png)  
 *Image 8: Elbow Method Plot*
+
+The Elbow Method plot suggests a slight bend at k=3, indicating a potentially optimal number of clusters for segmentation, although the curve is smooth, suggesting potential overlap or ambiguity in the data.
 
 ### Cluster Visualization
 
-The scatter plot with centroids marked in red highlights the formation of clusters based on effectiveness and expertise ratings. The plot indicates some degree of separation, albeit with some overlap, reflecting variations in perceptions of the sessions' effectiveness and resource persons' expertise.
-
-![Cluster Visualization](image9.png)  
+![Cluster Visualization](figures/fig10.png)  
 *Image 9: Cluster Visualization*
+
+The scatter plot with centroids illustrates the formation of clusters based on effectiveness and expertise ratings. While some separation is observed, overlap suggests variations in perceptions among participants.
 
 ## Observations and Recommendations
 
-The distribution of feedback indicates that certain faculty members were rated more frequently, which could reflect higher engagement or a larger number of sessions conducted. Future session planning could consider this distribution to ensure a balanced opportunity for feedback across all faculty members.
-
-The consistently high ratings across all categories suggest that the sessions were well-received, indicating that the content and delivery are in line with participant expectations and industry relevance.
-
-The presence of outliers, particularly in effectiveness and expertise, highlights the need for targeted improvements in certain areas or for specific sessions.
-
-The K-means clustering did not reveal strongly differentiated clusters, which may suggest that the participants' opinions do not vary widely. However, it could also indicate that the feedback questions are not capturing the full breadth of participant experiences.
-
-The analysis could benefit from additional data, such as pre- and post-session competency assessments, to provide a more nuanced understanding of the sessions' impact.
-
-Textual feedback, although sparse, could yield qualitative insights that complement the quantitative ratings. A more in-depth textual analysis could reveal specific areas for enhancement or highlight particular strengths.
+- Future session planning should consider distributing feedback opportunities more evenly among faculty members to ensure balanced feedback.
+- While overall satisfaction is high, targeted improvements are needed in areas highlighted by outliers, particularly in effectiveness and expertise.
+- The lack of distinct clusters suggests the need for additional dimensions of analysis or additional data sources, such as pre- and post-session competency assessments.
+- Qualitative insights from textual feedback could complement quantitative ratings, providing a more comprehensive understanding of participant experiences.
 
 ## Conclusion
 
-The feedback data analysis reveals overall positive ratings for the sessions, with some areas for improvement. The clustering analysis provides a starting point for segmenting participant satisfaction, although the lack of distinct clustering suggests the need for additional dimensions of analysis. The insights gained from this report can inform future training session planning, content creation, and delivery style adjustments to enhance the learning experience.
+The feedback data analysis reveals generally positive ratings for Intel Certification courses, with areas for improvement highlighted by outliers. The segmentation analysis offers insights into participant satisfaction levels, guiding targeted improvements to enhance the learning experience. The report provides valuable insights for future course planning, content creation, and delivery adjustments.
