@@ -84,3 +84,29 @@ The median viewing of announcements shows differentiation between genders.
 - Active engagement in class is associated with higher academic performance.
 - Gender differences in engagement metrics suggest the need for tailored engagement strategies.
 - Educators should consider inclusive strategies to encourage equal participation among all students.
+
+## K-Means Clustering
+
+### Objective
+To segment the dataset into meaningful clusters based on student interaction features such as 'raisedhands', 'VisITedResources', 'AnnouncementsView', and 'Discussion'.
+
+### Methodology
+We employed K-Means clustering, a widely-used method for partitioning a data set into K distinct, non-overlapping subgroups. To determine the optimal number of clusters (K), we used the Elbow Method, which considers the within-cluster sum of squares (inertia). The data features were standardized to ensure equal weightage during the clustering process.
+
+### Results
+
+#### Elbow Method Analysis
+![Elbow Method For Optimal k](figures2/img5.jpg)
+The Elbow plot indicated that inertia significantly drops and then plateaus as the number of clusters increases. The optimal K was found to be 2, as the plot showed an 'elbow' at this point, suggesting that additional clusters do not significantly contribute to explaining variance in the data.
+
+#### Cluster Characteristics
+- **Cluster 0** was characterized by lower engagement, with students having lower 'raisedhands', 'VisITedResources', 'AnnouncementsView', and 'Discussion' scores.
+- **Cluster 1** represented a group with higher engagement levels across all the considered features.
+
+#### Visualization
+![Clusters Visualization on Raised Hands vs. Visited Resources](figures2/img4.jpg)
+The scatter plot of 'raisedhands' versus 'VisITedResources' with cluster hue provided a clear visual distinction between the two groups. Cluster 0 was generally concentrated in the lower left corner, indicating lower levels of engagement, while Cluster 1 was spread across the higher values of both features.
+
+### Conclusion
+The K-Means clustering has effectively segmented the students into two distinct groups based on their engagement levels. These insights can be used to tailor educational strategies and interventions to enhance learning experiences and outcomes.
+
