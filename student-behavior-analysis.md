@@ -107,6 +107,6 @@ The Elbow plot indicated that inertia significantly drops and then plateaus as t
 ![Clusters Visualization on Raised Hands vs. Visited Resources](figures2/img4.jpg)
 The scatter plot of 'raisedhands' versus 'VisITedResources' with cluster hue provided a clear visual distinction between the two groups. Cluster 0 was generally concentrated in the lower left corner, indicating lower levels of engagement, while Cluster 1 was spread across the higher values of both features.
 
-### Conclusion
+## Conclusion
 The K-Means clustering has effectively segmented the students into two distinct groups based on their engagement levels. These insights can be used to tailor educational strategies and interventions to enhance learning experiences and outcomes.
 
