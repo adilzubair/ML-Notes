@@ -1,4 +1,4 @@
-Research Plan: Application of Novel Snapshot-Based Hyperspectral Imaging Combined with AI to Detect Lesions
+# Research Plan: Application of Novel Snapshot-Based Hyperspectral Imaging Combined with AI to Detect Lesions
 
 ### 1. Introduction
 
